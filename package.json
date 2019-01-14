@@ -5,18 +5,31 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "webpack": "webpack --watch --mode=development"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
     "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "mongoose": "^5.4.3",
     "node": "^11.0.0",
-    "react": "^16.7.0"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.28.4"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "webpack-cli": "^3.2.1"
+  },
+  "engines": {
+    "node": "11.0.0",
+    "npm": "6.4.1"
   }
 }
